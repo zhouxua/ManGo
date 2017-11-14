@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <!--fragment-->
+    <!--底部按钮-->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#f2eeea"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtn1"
+                style="@style/button_style"
+                android:drawableTop="@drawable/button_image1"
+                android:text="@string/app_home"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn2"
+                style="@style/button_style"
+                android:drawableTop="@drawable/button_image2"
+                android:text="@string/app_class"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn3"
+                style="@style/button_style"
+                android:drawableTop="@drawable/button_image3"
+                android:text="@string/app_cart"
+                />
+            <RadioButton
+                android:id="@+id/rbtn4"
+                style="@style/button_style"
+                android:drawableTop="@drawable/button_image4"
+                android:text="@string/app_user"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
